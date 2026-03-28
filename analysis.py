@@ -6,7 +6,7 @@ import torch
 
 # 1. Setup & Data Loading
 try:
-    df = pd.read_csv('data/trending_topics_2026.csv')
+    df = pd.read_csv('data/trending_topics_2026_synthetic.csv')
     print("✅ Data Loaded Successfully")
 except FileNotFoundError:
     print("❌ Error: Please ensure the dataset is in the /data folder.")
