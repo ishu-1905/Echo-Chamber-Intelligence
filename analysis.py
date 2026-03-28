@@ -58,9 +58,9 @@ countries = [n for n in G.nodes() if len(str(n)) <= 3] # Short codes like PK, US
 topics = [n for n in G.nodes() if len(str(n)) > 3]
 
 # Draw Nodes
-nx.draw_networkx_nodes(G, pos, nodelist=countries, node_color='skyblue', 
+nx.draw_networkx_nodes(G, pos, nodelist=countries, node_color='orange', 
                        node_size=1200, label='Countries')
-nx.draw_networkx_nodes(G, pos, nodelist=topics, node_color='lightgreen', 
+nx.draw_networkx_nodes(G, pos, nodelist=topics, node_color='beige', 
                        node_size=800, label='Topics')
 
 # Draw Edges & Labels
