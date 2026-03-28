@@ -1,0 +1,7 @@
+pandas
+networkx
+matplotlib
+seaborn
+transformers
+torch
+textblob
