@@ -5,7 +5,6 @@ from transformers import pipeline
 import torch
 
 # 1. Setup & Data Loading
-# Ensure 'trending_topics_2026.csv' is in your /data folder
 try:
     df = pd.read_csv('data/trending_topics_2026.csv')
     print("✅ Data Loaded Successfully")
