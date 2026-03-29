@@ -59,12 +59,12 @@ topics = [n for n in G.nodes() if len(str(n)) > 3]
 
 # Draw Nodes
 nx.draw_networkx_nodes(G, pos, nodelist=countries, node_color='orange', 
-                       node_size=1200, label='Countries')
+                       node_size=2000, label='Countries')
 nx.draw_networkx_nodes(G, pos, nodelist=topics, node_color='beige', 
                        node_size=800, label='Topics')
 
 # Draw Edges & Labels
-nx.draw_networkx_edges(G, pos, alpha=0.3, edge_color='gray')
+nx.draw_networkx_edges(G, pos, alpha=0.3, edge_color='gray', width=2.0)
 nx.draw_networkx_labels(G, pos, font_size=10, font_weight='bold')
 
 plt.title("Echo-Chamber-Intelligence: Global Topic Influence Network (2026)", fontsize=15)
